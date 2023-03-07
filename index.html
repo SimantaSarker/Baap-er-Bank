@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Inside</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+  <header>
+    <h1 class="text-5xl text-center mt-6">Let's get Some <span class="font-bold text-violet-600 ">Money...</span></h1>
+  </header>
+  <main>
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-3 w-9/12 mx-auto mt-5">
+      <div class="bg-red-300  rounded p-8 font-semibold">
+        <h4 class="text-3xl" >Deposit</h4>
+        <h2 class="text-3xl">$<span  id="deposite-taka">00</span></h2>
+      </div>
+      <div class="bg-green-200  rounded p-8 font-semibold">
+        <h4 class="text-3xl">Withdraw</h4>
+        <h2 class="text-3xl">$<span id="withdraw-total">00</span></h2>
+      </div>
+      <div class="bg-violet-500  rounded p-8 font-semibold">
+        <h4 class="text-3xl">Balance</h4>
+        <h2 class="text-3xl">$<span id="balance-total">1240</span></h2>
+      </div>
+
+    </section>
+    <section class="mt-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 w-9/12 mx-auto gap-x-5">
+        <div class=" bg-blue-500 p-8 rounded">
+          <h3 class="text-3xl text-cyan-50">Please Deposite</h3>
+          <input class="block mt-5 ml-6 w-4/5 p-1 rounded" type="text" placeholder="$ amount you want to depostie" id="deposite-input">
+          <button
+            class="mt-5 ml-6 border-2 border-indigo-600 bg-zinc-600 w-1/4 rounded p-1 text-white btn-deposite text-xl border-none font-semibold" id="btn-deposite">Deposit</button>
+        </div>
+        <div class=" bg-indigo-700 p-8 rounded">
+          <h3 class="text-3xl text-cyan-50">Please Withdraw</h3>
+          <input class="block mt-5 ml-6 w-4/5 p-1 rounded" type="text" placeholder="$ amount you want to withdraw" id="withdraw-input">
+          <button
+            class="mt-5 ml-6 border-2 border-indigo-600 bg-yellow-600 w-1/4 rounded p-1 text-white  text-xl border-none font-semibold" id="btn-withdraw">Withdraw</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+
+
+
+  <script src="js/bank.js"></script>
+</body>
+
+</html>
