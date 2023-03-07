@@ -11,7 +11,7 @@ document.getElementById("btn-submit").addEventListener("click", function () {
     passPassValue =='12345'
   ) {
 
-    location.href = "bank.html";
+    location.href = "baap-er-bank.html";
   } else {
     alert("valid password de ..Sala ekta tui");
     emailValue.value='';
